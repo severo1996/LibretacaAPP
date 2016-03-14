@@ -6,7 +6,6 @@
 package libretaapp;
 
 /**
- *No dispone de métodos funcionales para la aplicación, los únicos métodos que tiene son getters y setters.
  * Permite agrupar los contactos en grupos.
  * @author Severo1996
  */
