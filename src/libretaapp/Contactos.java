@@ -11,19 +11,19 @@ package libretaapp;
  * and open the template in the editor.
  */
 
-public class Contacto {
+public class Contactos {
     public static int ncontactos=1;
     private int id;
     private String nombre;
     private String apellidos;
     private Grupo grupo;
     
-    public Contacto(){
+    public Contactos(){
         id=ncontactos;
         ncontactos++;
     }
     
-    public Contacto(String nombre,String apellidos){
+    public Contactos(String nombre,String apellidos){
         id=ncontactos;
         this.nombre=nombre;
         this.apellidos=apellidos;
@@ -43,7 +43,7 @@ public class Contacto {
     }
 
     public void setNcontactos(int ncontactos) {
-        Contacto.ncontactos = ncontactos;
+        Contactos.ncontactos = ncontactos;
     }
 
     public String getNombre() {

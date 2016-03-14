@@ -11,7 +11,7 @@ package libretaapp;
  */
 public class Grupo {
     private String nombre;
-    private Contacto[] contactos;
+    private Contactos[] contactos;
     
     public Grupo(String nombre){
         this.nombre=nombre;
@@ -25,11 +25,11 @@ public class Grupo {
         this.nombre = nombre;
     }
 
-    public Contacto[] getContactos() {
+    public Contactos[] getContactos() {
         return contactos;
     }
 
-    public void setContactos(Contacto[] contactos) {
+    public void setContactos(Contactos[] contactos) {
         this.contactos = contactos;
     }
     

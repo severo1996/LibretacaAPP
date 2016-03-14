@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class Libreta {
     //private String nombre;
     //private String dni;
-    private final Contacto[] contactos=new Contacto[10];
+    private final Contactos[] contactos=new Contactos[10];
     private final Grupo[] grupos = new Grupo[10];
     
     public Libreta(){
@@ -32,7 +32,7 @@ public class Libreta {
      * crea un contacto y lo añade a la libreta.
      * @param contacto recibe un objeto de tipo contacto.
      */
-    public void engadir(Contacto contacto){
+    public void engadir(Contactos contacto){
         boolean libretaLlena=true;
         for(int i=0;i<contactos.length;i++){
             if(contactos[i]==null){
@@ -54,7 +54,7 @@ public class Libreta {
         boolean libretaLlena=true;
         for(int i=0;i<contactos.length;i++){
             if(contactos[i]==null){
-                Contacto contacto = new Contacto(JOptionPane.showInputDialog("Nombre:"),JOptionPane.showInputDialog("Apellidos:"));
+                Contactos contacto = new Contactos(JOptionPane.showInputDialog("Nombre:"),JOptionPane.showInputDialog("Apellidos:"));
                 contactos[i]=contacto;
                 libretaLlena=false;
                 break;
@@ -71,7 +71,7 @@ public class Libreta {
      */
     public void listar(){
         String cadena="";
-        for(Contacto elemento:contactos){
+        for(Contactos elemento:contactos){
             if(elemento!=null){
                 cadena+=elemento.toString()+"\n";
             }
